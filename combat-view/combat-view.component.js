@@ -3,6 +3,20 @@ angular.module("grantApp").component("combatView", {
   controller: ['CombatService', "$location", function (CombatService, $location) {
     this.names = {};
     this.names = CombatService.combatPhase(this.playerName, this.enemyName);
-    console.log(this.names);
+    console.log("sup", this.names);
+
+    this.combatPhase = function () {
+      CombatService.combatPhase();
+
+    }
+
+    this.attack = function () {
+      CombatService.attack();
+    }
+
+    // this.retreat = function () {
+    //   CombatService.retreat();
+    // }
+
   }]
 });
