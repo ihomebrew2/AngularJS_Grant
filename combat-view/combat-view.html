@@ -3,13 +3,13 @@
 
 		<div class="show-names">
 			<div class="show-player">{{$ctrl.names.playerName}}{{$ctrl.player.score}}</div>
-			<div class="show-enemy">{{$ctrl.names.enemyName}}</div>
+			<div class="show-enemy">{{$ctrl.names.enemyName}}{{$ctrl.enemy.score}}</div>
 		</div>
 
 		<div id="actions">
 			<button id="attack" class="attack" ng-click="$ctrl.attack()">Attack?</button>
-			<button id="heal" class="heal">Heal?</button>
-			<button id="retreat" class="retreat" ng-class="$ctrl.retreat()">Retreat?</input>
+			<button id="heal" class="heal" ng-click="$ctrl.getHealing()">Heal?</button>
+			<button id="retreat" class="retreat" ng-click="$ctrl.retreat()">Retreat?</button>
 		</div>
 	</div>
 

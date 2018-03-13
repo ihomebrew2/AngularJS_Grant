@@ -7,7 +7,7 @@ angular.module("grantApp").config(["$routeProvider", function ($routeProvider) {
     template: '<combat-view />',
   });
   $routeProvider.when('/retreat', {
-    template: '<retreat-view />',
+    template: '<retreat />',
   });
 
 

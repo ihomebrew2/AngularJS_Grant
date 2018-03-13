@@ -15,9 +15,10 @@ class Player {
 }
 
 function getDamage() {
-	return Math.floor(Math.random() * 3) + 1;
+  return Math.floor(Math.random() * 3) + 1;
 }
 
 function getHealing() {
-	return Math.floor(Math.random() * 10) + 1;
+  return Math.floor(Math.random() * 10) + 1;
 }
+
